@@ -1,0 +1,239 @@
+/* Animation States */
+.animate-on-scroll {
+    opacity: 0;
+    transition: all 0.8s cubic-bezier(0.2, 0.6, 0.2, 1);
+}
+
+.fade-up {
+    transform: translateY(40px);
+}
+
+.slide-right {
+    transform: translateX(-40px);
+}
+
+.slide-left {
+    transform: translateX(40px);
+}
+
+.animate-active {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.delay-1 {
+    transition-delay: 0.2s;
+}
+
+.delay-2 {
+    transition-delay: 0.4s;
+}
+
+.delay-3 {
+    transition-delay: 0.6s;
+}
+
+.about-section {
+    padding: 100px 0;
+    background-color: #ffffff;
+}
+
+/* Top Section Styles */
+.about-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.about-intro {
+    flex: 1.2;
+}
+
+.sub-heading {
+    color: #e31e24;
+    /* Brand Red */
+    font-weight: 700;
+    font-size: 16px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.main-title {
+    font-family: 'General Sans', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: #1a2b6d;
+    line-height: 1.2;
+    margin-bottom: 30px;
+}
+
+.btn-get-started-about {
+    background: #e31e24;
+    /* Brand Red */
+    color: white;
+    border: none;
+    padding: 14px 35px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-get-started-about:hover {
+    background: #c2181d;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(227, 30, 36, 0.2);
+}
+
+.about-description {
+    flex: 1;
+    padding-top: 50px;
+}
+
+.about-description p {
+    font-family: 'General Sans', sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+    color: #666;
+}
+
+/* Grid Section Styles */
+.about-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 30px;
+}
+
+.story-card {
+    position: relative;
+    height: 500px;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.card-image-bg {
+    width: 100%;
+    height: 100%;
+}
+
+.card-image-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-content-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+    color: white;
+}
+
+.card-content-overlay h3 {
+    font-family: 'General Sans', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.card-content-overlay p {
+    font-family: 'General Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    opacity: 0.9;
+    max-width: 90%;
+}
+
+.mission-vision-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.info-card-modern {
+    flex: 1;
+    padding: 40px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mission-card {
+    background-color: #f0fff4;
+    /* Light Green Tint from image, we'll keep as requested or adjust to brand red tint if preferred. Image shows green. */
+    border: 1px solid #e0f2e9;
+}
+
+.vision-card {
+    background-color: #0b704d;
+    /* Solid Green from image */
+    color: white;
+}
+
+/* Following brand red as requested "follow the red" */
+.mission-card {
+    background-color: #fff5f5;
+    border: 1px solid #fed7d7;
+}
+
+.vision-card {
+    background-color: #e31e24;
+    /* Brand Red */
+    color: white;
+}
+
+.info-card-modern h3 {
+    font-family: 'General Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.info-card-modern p {
+    font-family: 'General Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+/* Responsiveness */
+@media (max-width: 1024px) {
+    .about-top {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .about-description {
+        padding-top: 0;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .story-card {
+        height: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-title {
+        font-size: 32px;
+    }
+
+    .story-card {
+        height: 350px;
+    }
+
+    .card-content-overlay {
+        padding: 20px;
+    }
+}
