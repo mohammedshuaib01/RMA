@@ -39,7 +39,7 @@ const AlumniSection = () => {
         <section className="alumni-light-section">
             <div className="container">
                 <div className="alumni-light-header">
-                    <p className="subtitle">Curious how people are using RMA</p>
+                    {/* <p className="subtitle">Curious how people are using RMA</p> */}
                     <h2 className="title">Hear What Our Clients Are Saying</h2>
                 </div>
 
