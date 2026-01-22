@@ -23,7 +23,6 @@
 }
 
 .hero-title {
-    font-family: 'General Sans', sans-serif;
     font-size: 60px;
     font-weight: 700;
     color: #1a2b6d;
@@ -38,7 +37,6 @@
 }
 
 .hero-subtitle {
-    font-family: 'General Sans', sans-serif;
     font-size: 16px;
     color: #ffffff;
     max-width: 650px;

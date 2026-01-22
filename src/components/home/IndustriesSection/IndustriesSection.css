@@ -1,0 +1,112 @@
+.industries-section {
+    padding: 100px 0;
+    background-color: #fcfcfc;
+    font-family: 'Outfit', sans-serif;
+}
+
+.industries-header {
+    margin-bottom: 60px;
+    text-align: left;
+}
+
+.industries-header .sub-title {
+    color: #e31e24;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 2px;
+    display: block;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.industries-header .section-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #1a2b6d;
+    margin: 0;
+}
+
+.industries-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 60px;
+    row-gap: 0;
+}
+
+.industry-item {
+    position: relative;
+    padding: 25px 0;
+    border-bottom: 1px solid #e0e0e0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.industry-content {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: all 0.3s ease;
+}
+
+.industry-icon {
+    color: #999;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.industry-name {
+    font-size: 18px;
+    font-weight: 500;
+    color: #444;
+    transition: all 0.3s ease;
+}
+
+.hover-line {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: #1a2b6d;
+    transition: width 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+/* Hover States */
+.industry-item:hover .industry-name {
+    color: #000;
+    font-weight: 600;
+}
+
+.industry-item:hover .industry-icon {
+    color: #1a2b6d;
+    transform: scale(1.1);
+}
+
+.industry-item:hover .hover-line {
+    width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .industries-grid {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 40px;
+    }
+}
+
+@media (max-width: 640px) {
+    .industries-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .industries-header .section-title {
+        font-size: 2.2rem;
+    }
+
+    .industries-section {
+        padding: 60px 0;
+    }
+}

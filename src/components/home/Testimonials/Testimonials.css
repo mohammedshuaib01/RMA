@@ -11,8 +11,7 @@
 }
 
 .header-main-title {
-    font-family: 'General Sans', sans-serif;
-    font-size: 40px;
+    font-size: 3.5rem;
     font-weight: 700;
     color: #1a1a1a;
     margin-bottom: 25px;
@@ -35,7 +34,6 @@
 }
 
 .nav-title {
-    font-family: 'General Sans', sans-serif;
     font-size: 28px;
     font-weight: 700;
     color: #1a1a1a;
@@ -133,7 +131,6 @@
 }
 
 .testimonial-text {
-    font-family: 'General Sans', sans-serif;
     font-size: 16px;
     line-height: 1.6;
     color: #444;
@@ -172,7 +169,6 @@
 }
 
 .user-name {
-    font-family: 'General Sans', sans-serif;
     font-size: 16px;
     font-weight: 700;
     color: #1a1a1a;

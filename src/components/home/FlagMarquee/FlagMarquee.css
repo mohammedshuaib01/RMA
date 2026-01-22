@@ -63,9 +63,9 @@
 }
 
 /* Pause on hover */
-.flag-marquee:hover .marquee-track {
+/* .flag-marquee:hover .marquee-track {
     animation-play-state: paused;
-}
+} */
 
 @media (max-width: 768px) {
     .flag-marquee-section {

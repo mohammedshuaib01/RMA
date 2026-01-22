@@ -1,0 +1,134 @@
+.faq-section {
+    padding: 100px 5%;
+    background-color: #fff;
+}
+
+.faq-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 80px;
+}
+
+/* Left Section */
+.faq-left {
+    flex: 1;
+    max-width: 450px;
+}
+
+.faq-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.1;
+    color: #1a1a1a;
+    margin-bottom: 2rem;
+}
+
+.faq-description {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 2.5rem;
+}
+
+.faq-more-link {
+    color: #4f46e5;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: transform 0.2s ease;
+}
+
+.faq-more-link:hover {
+    transform: translateX(5px);
+}
+
+/* Right Section - Accordion */
+.faq-right {
+    flex: 1.2;
+}
+
+.accordion {
+    border-top: 1px solid #e5e7eb;
+}
+
+.accordion-item {
+    border-bottom: 1px solid #e5e7eb;
+    overflow: hidden;
+}
+
+.accordion-header {
+    padding: 24px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.accordion-question {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin: 0;
+}
+
+.accordion-icon {
+    font-size: 1.5rem;
+    color: #1a1a1a;
+    font-weight: 400;
+    width: 24px;
+    text-align: center;
+}
+
+.accordion-content {
+    max-height: 0;
+    opacity: 0;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.accordion-item.active .accordion-content {
+    max-height: 200px;
+    opacity: 1;
+    padding-bottom: 24px;
+}
+
+.accordion-answer {
+    font-size: 1.05rem;
+    color: #666;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Mobile Responsive */
+@media (max-width: 1024px) {
+    .faq-container {
+        gap: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .faq-section {
+        padding: 60px 20px;
+    }
+
+    .faq-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .faq-left {
+        max-width: 100%;
+        text-align: left;
+    }
+
+    .faq-title {
+        font-size: 2.5rem;
+    }
+
+    .accordion-question {
+        font-size: 1.1rem;
+    }
+}
