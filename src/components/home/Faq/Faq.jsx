@@ -6,12 +6,12 @@ const Faq = () => {
 
     const faqData = [
         {
-            question: "How this work?",
-            answer: "Yet bed any for assistance indulgence unpleasing. Not thoughts all exercise blessing. Indulgence way everything joy alteration boisterous the attachment."
+            question: "How does it work?",
+            answer: "Our process is streamlined to ensure you get the best career opportunities. We handle everything from documentation to visa processing and post-arrival support."
         },
         {
-            question: "Are there any additional fee?",
-            answer: "Yet bed any for assistance indulgence unpleasing. Not thoughts all exercise blessing. Indulgence way everything joy alteration boisterous the attachment."
+            question: "Are there any additional fees?",
+            answer: "We maintain complete transparency in our pricing. All costs are discussed upfront, and there are no hidden charges throughout the process."
         },
         {
             question: "How can I get the app?",
@@ -31,9 +31,10 @@ const Faq = () => {
         <section className="faq-section" id="faq">
             <div className="faq-container">
                 <div className="faq-left">
+                    <span className="sub-title">FAQ</span>
                     <h2 className="faq-title">Any questions? <br /> We got you.</h2>
                     <p className="faq-description">
-                        Yet bed any for assistance indulgence unpleasing. Not thoughts all exercise blessing. Indulgence way everything joy alteration boisterous the attachment.
+                        Find answers to common questions about our services and process. We're here to help you navigate your journey with confidence.
                     </p>
                 </div>
 

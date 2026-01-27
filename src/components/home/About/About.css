@@ -219,15 +219,55 @@
 }
 
 @media (max-width: 768px) {
+    .about-section {
+        padding: 60px 0;
+    }
+
     .main-title {
-        font-size: 32px;
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .about-description {
+        margin-top: -20px;
+    }
+
+    .about-description p {
+        font-size: 15px;
     }
 
     .story-card {
-        height: 350px;
+        height: 300px;
     }
 
-    .card-content-overlay {
-        padding: 20px;
+    .card-content-overlay h3 {
+        font-size: 22px;
+    }
+
+    .card-content-overlay p {
+        font-size: 14px;
+    }
+
+    .info-card-modern {
+        padding: 30px 20px;
+    }
+
+    .info-card-modern h3 {
+        font-size: 20px;
+    }
+
+    .info-card-modern p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-title {
+        font-size: 24px;
+    }
+
+    .sub-heading {
+        font-size: 14px;
+        margin-bottom: 10px;
     }
 }

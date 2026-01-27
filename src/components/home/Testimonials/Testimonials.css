@@ -13,7 +13,7 @@
 .header-main-title {
     font-size: 3.5rem;
     font-weight: 700;
-    color: #1a1a1a;
+    color: #1a2b6d;
     margin-bottom: 25px;
 }
 
@@ -198,19 +198,56 @@
 }
 
 @media (max-width: 768px) {
+    .testimonials {
+        padding: 60px 0;
+    }
+
     .testimonial-card {
-        flex: 0 0 300px;
+        flex: 0 0 280px;
     }
 
     .header-main-title {
-        font-size: 28px;
+        font-size: 2.2rem;
+        margin-bottom: 20px;
     }
 
-    .testimonials .container {
-        padding: 0 20px;
+    .testimonials-nav {
+        margin-bottom: 30px;
+    }
+
+    .nav-title {
+        font-size: 22px;
+        margin-bottom: 20px;
     }
 
     .card-bubble {
-        padding: 30px;
+        padding: 25px;
+    }
+
+    .testimonial-text {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    .slider-controls {
+        gap: 15px;
+    }
+
+    .progress-bar {
+        width: 80px;
+    }
+
+    .testimonials-content {
+        gap: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-main-title {
+        font-size: 1.8rem;
+    }
+
+    .testimonial-card {
+        flex: 0 0 260px;
     }
 }

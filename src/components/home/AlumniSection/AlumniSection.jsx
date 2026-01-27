@@ -40,6 +40,7 @@ const AlumniSection = () => {
             <div className="container">
                 <div className="alumni-light-header">
                     {/* <p className="subtitle">Curious how people are using RMA</p> */}
+                    <span className="sub-title">CLIENT STORIES</span>
                     <h2 className="title">Hear What Our Clients Are Saying</h2>
                 </div>
 

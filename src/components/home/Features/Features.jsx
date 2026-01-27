@@ -36,6 +36,19 @@ const Features = () => {
           <path d="M9 15.5l2 2 4-4" />
         </svg>
       ),
+      title: 'Verified Job Opportunities',
+      description: 'We connect you with genuine, verified employers and roles that match your skills and experience.',
+    },
+
+    {
+      number: '04',
+      icon: (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+          <polyline points="14 2 14 8 20 8" />
+          <path d="M9 15.5l2 2 4-4" />
+        </svg>
+      ),
       title: '98% Success',
       description: 'We understand that visiting the expert can be stressful; our clinic is designed with your comfort in mind.',
     },
@@ -46,7 +59,7 @@ const Features = () => {
       <div className="container">
         <div className="features-header">
           <div className="header-left">
-            <span className="sub-heading-white">Our Features</span>
+            <span className="sub-heading-white">OUR FEATURES</span>
           </div>
           <div className="header-content">
             <h2 className="features-main-title">

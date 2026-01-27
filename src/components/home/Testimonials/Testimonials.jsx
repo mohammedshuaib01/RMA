@@ -155,6 +155,7 @@ const Testimonials = () => {
             <div className="container">
                 {/* Trustpilot Header */}
                 <div className="testimonials-header">
+                    <span className="sub-title">TESTIMONIALS</span>
                     <h2 className="header-main-title">Read reviews, apply with confidence.</h2>
                 </div>
 

@@ -23,7 +23,7 @@ const HeroNew = () => {
                     </p>
 
                     <button className="cta-button-red">
-                        Read Success Stories
+                        Join Now
                         <span className="arrow-icon">→</span>
                     </button>
                     
