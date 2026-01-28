@@ -10,28 +10,55 @@ import ProcessSection from './components/home/ProcessSection/ProcessSection';
 import Features from './components/home/Features/Features';
 import Testimonials from './components/home/Testimonials/Testimonials';
 import AlumniSection from './components/home/AlumniSection/AlumniSection';
-import Faq from './components/home/Faq/Faq';  
+import Faq from './components/home/Faq/Faq';
 import Footer from './components/common/Footer/Footer';
-import WhatsApp  from './components/common/WhatsApp/WhatsApp';
+import WhatsApp from './components/common/WhatsApp/WhatsApp';
+import ScrollReveal from './components/common/ScrollReveal/ScrollReveal';
 import './App.css';
 
 function App() {
   return (
-    <div className="app">   
+    <div className="app">
       <Header />
       <main>
         {/* <Hero /> */}
         <HeroNew />
 
-        <FlagMarquee />
-        <About />
-        <CountrySelection />
-        <IndustriesSection />
-        <ProcessSection />
-        <Features />
-        <Testimonials />
-        <AlumniSection />
-        <Faq />
+        <ScrollReveal delay={0.1}>
+          <FlagMarquee />
+        </ScrollReveal>
+
+        <ScrollReveal>
+          <About />
+        </ScrollReveal>
+
+        <ScrollReveal>
+          <CountrySelection />
+        </ScrollReveal>
+
+        <ScrollReveal>
+          <IndustriesSection />
+        </ScrollReveal>
+
+        <ScrollReveal>
+          <ProcessSection />
+        </ScrollReveal>
+
+        <ScrollReveal>
+          <Features />
+        </ScrollReveal>
+
+        <ScrollReveal>
+          <Testimonials />
+        </ScrollReveal>
+
+        <ScrollReveal>
+          <AlumniSection />
+        </ScrollReveal>
+
+        <ScrollReveal>
+          <Faq />
+        </ScrollReveal>
       </main>
       <Footer />
       <WhatsApp />
