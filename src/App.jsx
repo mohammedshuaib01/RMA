@@ -1,68 +1,38 @@
 import React from 'react';
 import Header from './components/common/Header/Header';
-// import Hero from './components/home/Hero/Hero';
-import HeroNew from './components/home/HeroNew/HeroNew';
-import FlagMarquee from './components/home/FlagMarquee/FlagMarquee';
-import About from './components/home/About/About';
-import CountrySelection from './components/home/CountrySelection/CountrySelection';
-import IndustriesSection from './components/home/IndustriesSection/IndustriesSection';
-import ProcessSection from './components/home/ProcessSection/ProcessSection';
-import Features from './components/home/Features/Features';
-import Testimonials from './components/home/Testimonials/Testimonials';
-import AlumniSection from './components/home/AlumniSection/AlumniSection';
-import Faq from './components/home/Faq/Faq';
 import Footer from './components/common/Footer/Footer';
 import WhatsApp from './components/common/WhatsApp/WhatsApp';
-import ScrollReveal from './components/common/ScrollReveal/ScrollReveal';
+import Home from './pages/Home/Home';
 import './App.css';
+import About from './pages/About/About';
+import Services from './pages/Services/Services';
+import Countries from './pages/Countries/Countries';
+import Contact from './pages/Contact/Contact';
+
+
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="app">
-      <Header />
-      <main>
-        {/* <Hero /> */}
-        <HeroNew />
+    <BrowserRouter>
+      <div className="app">
 
-        <ScrollReveal delay={0.1}>
-          <FlagMarquee />
-        </ScrollReveal>
 
-        <ScrollReveal>
-          <About />
-        </ScrollReveal>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/countries" element={<Countries />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+        <Footer />
+        <WhatsApp />
 
-        <ScrollReveal>
-          <CountrySelection />
-        </ScrollReveal>
 
-        <ScrollReveal>
-          <IndustriesSection />
-        </ScrollReveal>
 
-        <ScrollReveal>
-          <ProcessSection />
-        </ScrollReveal>
-
-        <ScrollReveal>
-          <Features />
-        </ScrollReveal>
-
-        <ScrollReveal>
-          <Testimonials />
-        </ScrollReveal>
-
-        <ScrollReveal>
-          <AlumniSection />
-        </ScrollReveal>
-
-        <ScrollReveal>
-          <Faq />
-        </ScrollReveal>
-      </main>
-      <Footer />
-      <WhatsApp />
-    </div>
+      </div>
+    </BrowserRouter>
   );
 }
 

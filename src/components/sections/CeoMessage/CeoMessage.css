@@ -1,0 +1,177 @@
+.ceo-section {
+    padding: 120px 0;
+    background-color: #fcfcfc;
+    position: relative;
+    overflow: hidden;
+}
+
+.ceo-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.ceo-image-container {
+    position: relative;
+}
+
+.ceo-image-wrapper {
+    position: relative;
+    border-radius: 40px;
+    overflow: hidden;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.1);
+}
+
+.ceo-image {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.ceo-image-wrapper:hover .ceo-image {
+    transform: scale(1.05);
+}
+
+.ceo-experience-badge {
+    position: absolute;
+    bottom: 30px;
+    right: -30px;
+    background: #e31e24;
+    color: white;
+    padding: 25px 35px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 15px 30px rgba(227, 30, 36, 0.3);
+    z-index: 2;
+}
+
+.ceo-experience-badge .years {
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.ceo-experience-badge .text {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.ceo-content {
+    position: relative;
+}
+
+.quote-icon {
+    position: absolute;
+    top: -30px;
+    left: -20px;
+    z-index: 0;
+}
+
+.ceo-title {
+    font-size: 42px;
+    font-weight: 700;
+    color: #1a2b6d;
+    margin-bottom: 30px;
+    line-height: 1.2;
+}
+
+.ceo-text {
+    margin-bottom: 40px;
+}
+
+.ceo-text p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.ceo-text p:last-child {
+    margin-bottom: 0;
+}
+
+.ceo-signature-area {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    border-top: 1px solid #eee;
+    padding-top: 30px;
+}
+
+.ceo-name {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1a2b6d;
+    margin-bottom: 5px;
+}
+
+.ceo-designation {
+    font-size: 16px;
+    color: #e31e24;
+    font-weight: 600;
+}
+
+.handwritten {
+    font-family: 'Dancing Script', cursive;
+    /* Assuming or suggesting a google font, or we can use a stylized span */
+    font-size: 36px;
+    color: #1a2b6d;
+    opacity: 0.6;
+}
+
+@media (max-width: 1024px) {
+    .ceo-grid {
+        gap: 40px;
+    }
+
+    .ceo-title {
+        font-size: 32px;
+    }
+
+    .ceo-image {
+        height: 500px;
+    }
+}
+
+@media (max-width: 768px) {
+    .ceo-section {
+        padding: 80px 0;
+    }
+
+    .ceo-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .ceo-image-container {
+        max-width: 500px;
+        margin: 0 auto 50px;
+    }
+
+    .ceo-experience-badge {
+        right: 20px;
+    }
+
+    .ceo-content {
+        text-align: center;
+    }
+
+    .quote-icon {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .ceo-signature-area {
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+}

@@ -1,0 +1,6 @@
+.services-page-container {
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 0;
+    /* Header is usually fixed or sticky */
+}

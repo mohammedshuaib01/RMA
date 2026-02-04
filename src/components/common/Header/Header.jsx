@@ -37,10 +37,11 @@ const Header = () => {
             <div className="header-pill">
                 <nav className={`header-nav ${mobileMenuOpen ? 'active' : ''}`}>
                     <ul className="nav-list">
-                        <li className="nav-item"><a href="#home" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Home <span className="arrow">▾</span></a></li>
-                        <li className="nav-item"><a href="#pages" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Pages <span className="arrow">▾</span></a></li>
-                        <li className="nav-item"><a href="#courses" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Courses <span className="arrow">▾</span></a></li>
-                        <li className="nav-item"><a href="#contact" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Contact</a></li>
+                        <li className="nav-item"><a href="/" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Home <span className="arrow">▾</span></a></li>
+                        <li className="nav-item"><a href="/about" className="nav-link" onClick={() => setMobileMenuOpen(false)}>About <span className="arrow">▾</span></a></li>
+                        <li className="nav-item"><a href="/countries" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Countries <span className="arrow">▾</span></a></li>
+                        <li className="nav-item"><a href="/services" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Services <span className="arrow">▾</span></a></li>
+                        <li className="nav-item"><a href="/contact" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Contact</a></li>
                     </ul>
                 </nav>
 
